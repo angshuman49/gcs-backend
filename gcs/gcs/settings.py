@@ -147,6 +147,6 @@ SIMPLE_JWT = {
 # CORS Settings (for React)
 CORS_ALLOW_ALL_ORIGINS = True  # Only for development
 
-
+ALLOWED_HOSTS = ["gcs-backend-gnvd.onrender.com", "https://greenherald-community-service-club.vercel.app"]
 # Your custom user model
 AUTH_USER_MODEL = 'accounts.User'
