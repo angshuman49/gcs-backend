@@ -25,6 +25,11 @@ def dashboard_content(request):
         return Response({'error': 'Invalid type'}, status=status.HTTP_400_BAD_REQUEST)
     return Response({'data': serializer.data})
 
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def check(req):
+    return Response({'message':'dummy'}, status=status=status.HTTP_200_OK)
+    
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def dashboard_change(request):
